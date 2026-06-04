@@ -12,7 +12,7 @@ import CurtainReveal from '../components/CurtainReveal';
 
 const HomePage: React.FC = () => {
   return (
-    <CurtainReveal>
+    // <CurtainReveal>
       <main>
         <Hero />
         <StatsCounter />
@@ -23,7 +23,7 @@ const HomePage: React.FC = () => {
         <Testimonials />
         <CTABanner />
       </main>
-    </CurtainReveal>
+    // </CurtainReveal>
   );
 };
 
