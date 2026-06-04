@@ -10,17 +10,17 @@ export const LEADERSHIP_DATA = [
   {
     name: "Rajesh Khare",
     image: '/img/rajesh.png',
-    description: "Mr. Khare, a Seasoned Chartered Civil Engineering Professional with 45+ years of experience in planning, design, and execution of infrastructure projects including roads, water supply, sewerage, wastewater systems, and smart city developments. Proven expertise in project management, structural design, and quality compliance with strong leadership in large-scale public infrastructure projects. He has gained this experience while working in different capacities in Govt. departments and is associated with us as Country Head."
+    description: "Mr. Khare is a seasoned Chartered Civil Engineering Professional with 45+ years of experience in planning, design, and execution of infrastructure projects including roads, water supply, sewerage, wastewater systems, and smart city developments. He brings proven expertise in project management, structural design, quality compliance, and public infrastructure leadership. He gained this experience while working in different capacities in Govt. departments and is associated with us as Country Head."
   },
   {
     name: "Indu Kumar Srivastava",
     image: '/img/indu.png',
-    description: "Mr. Indu Kant Srivastava is a distinguished Civil Engineering graduate with an illustrious career spanning 39 years of dedicated service at U.P. Jal Nigam. A veteran in the field of public infrastructure, he has developed an unparalleled mastery over the entire lifecycle of Water Supply Projects, ranging from initial conceptualization and design to ground-level execution and large-scale supervision. Beyond his specialization in water systems, Mr. Srivastava’s technical footprint extends to the successful management of complex Building and Road projects, demonstrating a versatile engineering acumen. His nearly four decades at the forefront of state-level infrastructure development have equipped him with deep expertise in navigating regulatory frameworks, ensuring quality compliance, and leading multi-disciplinary teams through high-stakes engineering challenges. His career is a testament to technical excellence and a lifelong commitment to enhancing public utility systems."
+    description: "Mr. Indu Kant Srivastava is a Civil Engineering graduate with 39 years of dedicated service at U.P. Jal Nigam. He has deep experience across the full lifecycle of Water Supply Projects, from concept and design to field execution and supervision. His work also includes Building and Road projects, regulatory coordination, quality compliance, and leadership of multidisciplinary engineering teams. His career reflects a long commitment to public utility systems."
   },
   {
     name: "Arun Kumar Tyagi",
     image: '/img/Arun.jpeg',
-    description: "Mr. Arun Kumar Tyagi is a distinguished professional with a robust background in engineering and management (BE, MBA, FIE). He has a proven track record of leadership in the public sector, having served as the Chief Project Officer for UREDA (Uttarakhand Renewable Energy Development Agency) and as an Advisor to the Planning Department for the Government of Uttarakhand. With deep expertise in large-scale project implementation and strategic planning, Mr. Tyagi specializes in steering complex initiatives from conception to execution within government frameworks. As a Fellow of the Institution of Engineers (FIE), he brings a high level of technical authority and administrative excellence to our leadership team."
+    description: "Mr. Arun Kumar Tyagi brings a strong background in engineering and management (BE, MBA, FIE). He served as Chief Project Officer for UREDA (Uttarakhand Renewable Energy Development Agency) and as an Advisor to the Planning Department for the Government of Uttarakhand. His experience covers large scale project implementation, strategic planning, and public sector delivery."
   },
 ];
 
@@ -32,62 +32,62 @@ export const CERTIFICATION_LOGOS = [
 export const SERVICES: Service[] = [
   {
     id: 'soft-dev',
-    title: 'AI-Powered Software Development',
-    description: 'We engineer intelligent, self-optimizing digital systems — not just apps. Every solution we build is architected with AI at its core, leveraging LLMs, neural inference, and autonomous workflows to deliver platforms that learn, adapt, and scale beyond human limitations.',
+    title: 'Custom Software Development',
+    description: 'We build reliable web and mobile systems that match the way your business works. From planning and architecture to launch and support, our focus stays on clean delivery and measurable value.',
     icon: 'Code2',
   },
   {
     id: 'ai',
     title: 'Generative AI & LLM Integration',
-    description: 'Unlock the transformative power of Large Language Models. We design and deploy production-grade AI agents, RAG pipelines, and fine-tuned models that automate complex reasoning tasks, synthesize knowledge, and create new value from your enterprise data.',
+    description: 'We design useful LLM tools for support, search, document handling, and internal knowledge access. Each build is grounded in your data, tested against real questions, and shaped for safe day to day use.',
     icon: 'Brain',
   },
   {
     id: 'ml',
     title: 'Machine Learning & Predictive AI',
-    description: 'Transform raw data into autonomous decision-making engines. We architect and train deep learning models, predictive inference systems, and computer vision pipelines — converting your unstructured data into a strategic competitive advantage.',
+    description: 'We help teams turn scattered data into clear forecasts, alerts, and operating insights. Our work covers predictive models, computer vision, reporting pipelines, and practical decision support.',
     icon: 'Cpu',
   },
   {
     id: 'ui-ux',
     title: 'Intelligent UI/UX Design',
-    description: 'We craft AI-aware interfaces that anticipate user intent. By combining behavioral analytics, dynamic personalization, and adaptive layouts, we build digital experiences that feel alive — intelligently morphing to each users context and need.',
+    description: 'We design interfaces that are clear, fast, and easy to use. Every screen is planned around the people using it, the tasks they repeat, and the information they need at the right moment.',
     icon: 'Figma',
   },
   {
     id: 'motion',
     title: 'Motion Graphics & AI Visualization',
-    description: 'Bring your AI systems to life with stunning visual narratives. We create GPU-accelerated animations, real-time data visualizations, and procedurally generated motion design that communicate complex machine intelligence in an instantly graspable, captivating form.',
+    description: 'We create motion graphics, product visuals, and data animations that explain complex ideas without clutter. The result is polished communication for dashboards, demos, presentations, and campaigns.',
     icon: 'Aperture',
   },
   {
     id: 'consulting',
     title: 'AI Strategy & Transformation',
-    description: 'Navigate the AI revolution with confidence. Our experts conduct AI readiness audits, design your neural architecture roadmap, identify automation opportunities across your value chain, and guide your organization through a structured, low-risk AI adoption journey.',
+    description: 'We help you choose the right technology path before money is spent on the wrong build. Our team reviews your process, data, risks, and goals, then creates a practical adoption plan.',
     icon: 'LineChart',
   },
   {
     id: 'cloud',
-    title: 'AI-Native Cloud Infrastructure',
-    description: 'Build the elastic backbone your AI workloads demand. We architect GPU-accelerated cloud environments, MLOps pipelines, and serverless inference platforms on AWS, Azure, and GCP — optimized for training, deployment, and real-time AI serving at any scale.',
+    title: 'Cloud Infrastructure',
+    description: 'We set up cloud systems that are secure, scalable, and easy to operate. This includes deployment pipelines, monitoring, cost control, backup planning, and performance tuning across AWS, Azure, and GCP.',
     icon: 'Cloud',
   },
   {
     id: 'cybersecurity',
-    title: 'AI-Driven Cyber Security',
-    description: 'Fight modern threats with machine intelligence. Our anomaly-detection models and AI-powered SIEM systems identify zero-day vulnerabilities, behavioral intrusions, and adversarial attacks in real time — providing a self-hardening digital perimeter that evolves with the threat landscape.',
+    title: 'Cyber Security',
+    description: 'We strengthen applications, infrastructure, and data flows through access control, monitoring, vulnerability review, secure configuration, and incident ready practices.',
     icon: 'ShieldCheck',
   },
   {
     id: 'data-analytics',
     title: 'Autonomous Data Intelligence',
-    description: 'Deploy AI that does not just analyze data — it asks the right questions. We build autonomous analytics engines, vector databases, and semantic search platforms that surface non-obvious patterns, generate narrative insights, and power intelligent decision-making at enterprise scale.',
+    description: 'We build analytics systems that make business data easier to trust and act on. Teams get clean dashboards, searchable records, clear reports, and timely insights from the data they already have.',
     icon: 'BarChart3',
   },
   {
     id: 'mobile-dev',
-    title: 'On-Device AI Mobile Apps',
-    description: 'Bring intelligence to the edge. We build React Native and Flutter applications embedded with on-device ML models for real-time inference, offline AI capabilities, and privacy-preserving personalization — delivering a genius-level mobile experience across iOS and Android.',
+    title: 'Mobile App Development',
+    description: 'We build mobile apps in React Native and Flutter for field teams, customers, and internal users. When needed, we add offline use, device level processing, secure sync, and fast performance on iOS and Android.',
     icon: 'Smartphone',
   },
 ];
@@ -105,8 +105,8 @@ export const ORG_MEMBERS: Record<string, OrgMember> = {
     role: "Chairperson",
     name: "J. P. Srivastava",
     image: '/img/chairperson.png',
-    details: "Provides top-level strategic vision and governance. Oversees board operations, guides the long-term business trajectory, and ensures the company's overarching objectives align with its core values and stakeholder interests.",
-    experiences: ["30+ years of industry experience.", "Expert in Third-Party Inspection and Quality Assurance.", "Former leadership roles in Govt/PSUs (Ministry of Railways, RDSO, RITES).", "Proven expertise in tendering, marketing, and project management."]
+    details: "Provides strategic vision and governance. Oversees board operations, guides the long term business trajectory, and ensures the company's objectives align with its core values and stakeholder interests.",
+    experiences: ["30+ years of industry experience.", "Expert in Third Party Inspection and Quality Assurance.", "Former leadership roles in Govt/PSUs (Ministry of Railways, RDSO, RITES).", "Proven expertise in tendering, marketing, and project management."]
   },
 
   managingdirector: {
@@ -115,15 +115,15 @@ export const ORG_MEMBERS: Record<string, OrgMember> = {
     name: "Rekha Srivastava",
     image: '/img/managing_dir.png',
     details: "Directs overall daily business operations and executes the company's strategic vision. Acts as the primary bridge between the board of directors and executive leadership to drive organizational growth, operational excellence, and market expansion.",
-    experiences: ["15+ years of experience in the trading, manufacturing, and service sectors.", "Directs daily business operations and executes long-term organizational strategy.", "Fosters a strong corporate culture and team development, backed by a PG in Psychology.", "Oversees financial health, business growth, and administrative excellence."]
+    experiences: ["15+ years of experience in the trading, manufacturing, and service sectors.", "Directs daily business operations and executes long term organizational strategy.", "Fosters a strong corporate culture and team development, backed by a PG in Psychology.", "Oversees financial health, business growth, and administrative excellence."]
   },
   directorSales: {
     id: "dir-hr-marketing",
     role: "Director Marketing",
     name: "Anant Srivastava",
     image: 'img/dir_sales.png',
-    details: "Drives revenue growth by leading business development initiatives and client acquisition strategies. Cultivates key enterprise partnerships, expands market reach, and manages the end-to-end sales pipeline.",
-    experiences: ["Driving revenue growth and B2B tech sales.", "Establishing global client networks.", "Over 12 years of executive sales leadership.", "Conducts in-situ testing, risk analysis, and material assessments.", "Leads structural design deliverables and concept development."]
+    details: "Drives revenue growth by leading business development initiatives and client acquisition strategies. Cultivates key enterprise partnerships, expands market reach, and manages the full sales pipeline.",
+    experiences: ["Driving revenue growth and B2B tech sales.", "Establishing global client networks.", "Over 12 years of executive sales leadership.", "Conducts in situ testing, risk analysis, and material assessments.", "Leads structural design deliverables and concept development."]
   },
 
   directorProject: {
@@ -147,24 +147,24 @@ export const ORG_MEMBERS: Record<string, OrgMember> = {
     role: "Finance Team",
     name: "Finance Ops",
     image: '/img/finance_ops.jpg',
-    details: "Handles day-to-day financial operations including invoicing, accounts payable/receivable, payroll processing, and financial compliance reporting to maintain flawlessly accurate records.",
-    experiences: ["Accounting, taxation, and auditing.", "Quarterly financial reporting.", "Ensuring regulatory financial compliance.", "Maintains accurate financial forecasting, budget tracking, and cost-benefit reporting."]
+    details: "Handles daily financial operations including invoicing, accounts payable/receivable, payroll processing, and financial compliance reporting to maintain accurate records.",
+    experiences: ["Accounting, taxation, and auditing.", "Quarterly financial reporting.", "Ensuring regulatory financial compliance.", "Maintains accurate financial forecasting, budget tracking, and cost benefit reporting."]
   },
   directorTech: {
     id: "dir-tech",
     role: "Director IT",
     name: "Pranav Srivastava",
     image: '/img/dir_IT.png',
-    details: "Leads the overarching technology strategy, engineering practices, and product development. Oversees the technical architecture and drives the engineering teams to deliver high-performance, scalable, and innovative software solutions.",
-    experiences: ["Cloud architecture and scalable system design.", "Full-stack development leadership.", "5+ years in software engineering.", "Led frontend architecture, UI/UX execution, sprint planning and stakeholder coordination"]
+    details: "Leads technology strategy, engineering practices, and product development. Oversees technical architecture and guides the engineering teams to deliver scalable software solutions.",
+    experiences: ["Cloud architecture and scalable system design.", "Full stack development leadership.", "5+ years in software engineering.", "Led frontend architecture, UI/UX execution, sprint planning and stakeholder coordination"]
   },
   teamLeader: {
     id: "vp",
     role: "VP",
     name: "VP",
     image: '/img/tech_lead.webp',
-    details: "Manages the day-to-day operations of the engineering floor. Mentors developers, enforces rigorous code quality and architectural best practices, and bridges the gap between complex technical execution and project requirements.",
-    experiences: ["full-stack engineering and technical leadership.", "Drives agile sprint execution and actively mentors development teams.", "Code reviews, systems architecture, debugging."]
+    details: "Manages daily engineering operations. Mentors developers, supports code quality and architecture practices, and connects technical execution with project requirements.",
+    experiences: ["Full stack engineering and technical leadership.", "Drives agile sprint execution and actively mentors development teams.", "Code reviews, systems architecture, debugging."]
   },
   teamSales: {
     id: "sales-team",
@@ -172,7 +172,7 @@ export const ORG_MEMBERS: Record<string, OrgMember> = {
     name: "Sales Ops",
     image: '/img/sales_ops.jpeg',
     details: "Supports the overarching sales strategy by analyzing market data, managing CRM tools, generating leads, and optimizing the client onboarding process to maximize conversion rates.",
-    experiences: ["Manages end-to-end CRM workflows and sales pipeline optimization.", "Conducts targeted market research to drive lead generation strategies.", "Analyzes core sales metrics to accurately forecast revenue and scale growth."]
+    experiences: ["Manages CRM workflows and sales pipeline optimization.", "Conducts targeted market research to drive lead generation strategies.", "Analyzes core sales metrics to forecast revenue and scale growth."]
   },
   teamProject: {
     id: "project-team",
@@ -180,14 +180,14 @@ export const ORG_MEMBERS: Record<string, OrgMember> = {
     name: "Project Ops",
     image: '/img/project_ops.webp',
     details: "Coordinates daily project tasks, tracks sprint milestones, and facilitates seamless communication between internal engineering teams and external clients to ensure a smooth development lifecycle.",
-    experiences: ["Coordinates cross-functional teams to ensure on-time, on-budget delivery.", "Manages resource allocation, risk mitigation, and daily project tracking.", "Maintains continuous, transparent communication with key internal and external stakeholders."]
+    experiences: ["Coordinates cross functional teams to support timely delivery within budget.", "Manages resource allocation, risk mitigation, and daily project tracking.", "Maintains continuous, transparent communication with key internal and external stakeholders."]
   },
   architects: {
     id: "architects",
     role: "Architects/Managers & SEs",
     name: "Engineering Team",
     image: '/img/team.jpg',
-    details: "The core builders of the company’s digital products. Responsible for writing robust code, designing scalable system architectures, and implementing cutting-edge technologies to solve complex engineering challenges.",
+    details: "The core builders of the company’s digital products. Responsible for writing robust code, designing scalable system architectures, and implementing practical technologies to solve complex engineering challenges.",
     experiences: ["Building rich scalable software solutions.", "React, Node.js, Python, AWS, Azure.", "Performance optimization & AI integrations."]
   }
 };
@@ -195,66 +195,66 @@ export const ORG_MEMBERS: Record<string, OrgMember> = {
 export const PROJECTS: Project[] = [
   {
     id: 'ai-1',
-    title: 'CogniFlow — Predictive Maintenance AI',
+    title: 'CogniFlow Predictive Maintenance',
     category: 'AI / IoT Analytics',
     image: '/img/nebosense.jpg',
-    shortDescription: 'CogniFlow is an AI-powered IoT sensor analytics platform that uses edge ML models and multivariate anomaly detection to predict equipment failures up to 72 hours before they occur — slashing downtime by 68% across industrial facilities.',
-    description: 'CogniFlow redefines industrial reliability through artificial intelligence. The platform ingests real-time telemetry from thousands of IoT sensors deployed on critical machinery, running it through a multi-layer anomaly detection stack powered by LSTM neural networks and transformer-based time-series models trained on decades of failure signatures. The system continuously learns from operational feedback, refining its prediction accuracy with every cycle. A centralized AI command dashboard surfaces failure probability scores, remaining useful life estimates, and auto-generated maintenance work orders — enabling maintenance teams to shift from reactive firefighting to proactive, intelligence-driven scheduling. CogniFlow has delivered an average 68% reduction in unplanned downtime and a 3.2× ROI on maintenance spend across all deployments.',
+    shortDescription: 'CogniFlow helps industrial teams monitor sensor data and spot equipment risk early, giving maintenance teams time to act before downtime begins.',
+    description: 'CogniFlow collects live readings from machinery and turns them into clear maintenance signals. Teams can view failure risk, remaining useful life, sensor trends, and suggested work orders from one dashboard. The system supports planned maintenance, faster response, and better visibility across critical equipment.',
     points: [
-      'LSTM + Transformer models for multivariate time-series anomaly detection.',
+      'Models for multivariate time series anomaly detection.',
       'Predicts equipment failures up to 72 hours in advance with 94% accuracy.',
-      'Real-time ingestion of 10,000+ IoT sensor streams via MQTT and Kafka.',
-      'Edge ML inference deployed on-device for zero-latency alerts.',
-      'Auto-generated AI maintenance work orders routed to field teams.',
+      'Live ingestion of 10,000+ IoT sensor streams via MQTT and Kafka.',
+      'Device level inference for faster alerts.',
+      'Maintenance work orders routed to field teams.',
       'Delivered 68% reduction in unplanned downtime across industrial clients.',
-      'Continuous federated learning loop improves model accuracy post-deployment.',
+      'Continuous learning loop improves accuracy after deployment.',
     ]
   },
   {
     id: 'ai-2',
-    title: 'FluentAI — Multilingual AI Government Assistant',
+    title: 'FluentAI Multilingual Government Assistant',
     category: 'Conversational AI',
     image: '/img/nebochat.jpg',
-    shortDescription: 'FluentAI is a production-grade multilingual AI chatbot engine built for government citizen portals. Powered by a fine-tuned LLM with a domain-specific RAG pipeline, it handles 50,000+ citizen queries daily in 12 Indian languages — resolving 84% without human intervention.',
-    description: 'FluentAI eliminates the communication barrier between government services and citizens at scale. The engine is built on a fine-tuned large language model augmented with a Retrieval-Augmented Generation (RAG) architecture, grounding every response in official government documents, policy PDFs, and real-time service status APIs. A proprietary multilingual NLP layer enables fluid conversation in 12 Indian languages including Hindi, Tamil, Bengali, and Marathi — with seamless mid-conversation language switching. The system integrates directly with department backends to provide live application status, document checklists, and appointment scheduling through natural dialogue. A human-in-the-loop escalation engine ensures complex cases are routed to the right officer with full AI-generated context briefings. Deployed across 3 state government portals, FluentAI now handles over 50,000 citizen interactions per day.',
+    shortDescription: 'FluentAI helps government portals answer citizen questions in 12 Indian languages and route complex cases to the right team.',
+    description: 'FluentAI connects citizen questions with approved government documents, service rules, and live status systems. Citizens can ask about applications, documents, appointments, and service steps in their preferred language. When a case needs an officer, the conversation history and context are passed along for faster handling.',
     points: [
-      'Fine-tuned LLM with domain-specific RAG over government policy documents.',
-      'Supports 12 Indian languages with real-time mid-conversation switching.',
+      'LLM with retrieval over approved government policy documents.',
+      'Supports 12 Indian languages with live language switching.',
       'Resolves 84% of citizen queries autonomously without human escalation.',
-      'Live integration with government backends for real-time service status.',
-      'AI-generated context briefings for human-in-the-loop escalations.',
+      'Live integration with government backends for service status.',
+      'Context notes for officer escalations.',
       'Deployed across 3 state portals serving 50,000+ daily active users.',
-      'End-to-end encrypted with full audit trail for regulatory compliance.',
+      'Encrypted flow with full audit trail for compliance.',
     ]
   },
   {
     id: 'ai-3',
-    title: 'OpticSight — Computer Vision Quality Inspector',
+    title: 'OpticSight Computer Vision Quality Inspector',
     category: 'Computer Vision / ML',
     image: '/img/nebovision.jpg',
-    shortDescription: 'OpticSight is a real-time computer vision quality inspection system that deploys fine-tuned object detection models on manufacturing lines to identify micro-defects at 120fps — achieving 99.2% defect detection accuracy while processing 6× faster than human inspectors.',
-    description: 'OpticSight brings the precision of deep learning to industrial quality control. Cameras deployed at every critical point of the manufacturing line stream footage to the OpticSight inference engine, which runs fine-tuned YOLOv8 and Vision Transformer models to detect surface defects, dimensional anomalies, label misalignment, and contamination with sub-millimeter precision at 120 frames per second. The system is trained using a proprietary active learning loop — flagging uncertain predictions for expert review, retraining nightly on the corrected samples, and continuously tightening its accuracy threshold. A spatial analytics dashboard maps defect hotspots across the production floor, enabling root-cause analysis and process corrections that reduce defect rates at the source. OpticSight achieved 99.2% detection accuracy across 47 defect classes in its pilot deployment, eliminating the need for full-time visual inspection staff and reducing quality-related product recalls by 91%.',
+    shortDescription: 'OpticSight checks manufacturing line images for defects at high speed and gives quality teams a clearer way to track recurring issues.',
+    description: 'OpticSight uses cameras on the production line to detect surface defects, measurement issues, label errors, and contamination. A dashboard shows where defects are appearing most often so teams can correct the process, not only reject the product. In pilot use, the system reached 99.2% detection accuracy across 47 defect classes.',
     points: [
-      'Fine-tuned YOLOv8 + Vision Transformer models for multi-class defect detection.',
+      'YOLOv8 and Vision Transformer models for multi class defect detection.',
       '99.2% detection accuracy across 47 defect categories at 120fps.',
-      'Active learning loop: uncertain predictions auto-flagged for expert annotation.',
-      'Spatial analytics dashboard maps defect hotspots for process root-cause analysis.',
+      'Uncertain predictions flagged for expert review.',
+      'Spatial analytics dashboard maps defect hotspots for root cause review.',
       'Processes 6× faster than human visual inspection at 5% of the cost.',
-      'Reduced client quality-related product recalls by 91% in pilot deployment.',
-      'Edge deployment on NVIDIA Jetson hardware — no cloud latency.',
+      'Reduced client quality related product recalls by 91% in pilot deployment.',
+      'Edge deployment on NVIDIA Jetson hardware for low latency.',
     ]
   },
   {
     id: 'elites-hrms',
     title: 'EliTes India HRMS',
     category: 'Enterprise SaaS',
-    shortDescription: 'AI-Powered Human Resource Management System for large-scale enterprise operations.',
-    description: 'A comprehensive HRMS designed to streamline workforce management for EliTes India. Features include automated payroll, predictive attrition modeling, and AI-driven sentiment analysis.',
+    shortDescription: 'Human Resource Management System for large scale enterprise operations.',
+    description: 'A comprehensive HRMS designed to streamline workforce management for EliTes India. Features include automated payroll, retention risk reporting, and employee feedback analysis.',
     image: '/img/elites_hrms.png',
     points: [
-      'AI-Driven Attrition Prediction: Using ML models to identify retention risks.',
+      'Attrition prediction using ML models to identify retention risks.',
       'Automated Payroll Reconciliation with 99.9% accuracy.',
-      'Real-time Employee Sentiment Analysis via NLP on feedback loops.',
+      'Live employee sentiment analysis through feedback loops.',
       'Intelligent Resource Allocation & Leave Management.'
     ]
   },
@@ -263,16 +263,16 @@ export const PROJECTS: Project[] = [
     title: 'UPYOG/DIGIT Platform',
     category: 'Software Architecture',
     image: '/img/upyog.jpg',
-    shortDescription: "The DIGIT Platform based UPYOG Platform is an open-source digital governance framework designed to help municipal bodies deliver efficient and transparent public services. It enables government departments to digitize workflows and manage services through a unified platform. The system supports multiple modules for different administrative functions and allows citizens to access municipal services online.",
+    shortDescription: "The DIGIT Platform based UPYOG Platform is an open source digital governance framework designed to help municipal bodies deliver efficient and transparent public services. It enables government departments to digitize workflows and manage services through a unified platform. The system supports multiple modules for different administrative functions and allows citizens to access municipal services online.",
     points: [
-      "Built on the open-source DIGIT Platform framework.",
+      "Built on the open source DIGIT Platform framework.",
       "Designed for digital governance of municipal corporations and ULBs.",
       "Provides a modular architecture for different government departments.",
       "Supports modules such as:Property management, Trade licensing, Planning permissions, Inventory management, Grievance systems",
       "Helps digitize workflows and reduce manual paperwork.",
       "Ensures scalability, interoperability, and service standardization.",
       "Provides citizens with online access to municipal services.",
-      "Improves transparency, efficiency, and data-driven decision making."
+      "Improves transparency, efficiency, and data based decision making."
     ]
   },
   {
@@ -281,14 +281,14 @@ export const PROJECTS: Project[] = [
     category: 'Web App Selfie Kiosk',
     image: '/img/gmr.avif',
     shortDescription: "The Selfie Kiosk System developed for **GMR Group at Indira Gandhi International Airport provides an interactive digital experience where visitors can capture selfies with themed backgrounds and download them instantly using a QR code.",
-    description: 'The Selfie Kiosk System was developed as an interactive digital solution for visitors at Indira Gandhi International Airport, with GMR Group as the client. The kiosk allows travelers to capture personalized selfies and enhance them with digitally generated backgrounds, creating a memorable airport experience.The system provides a user-friendly interface where visitors can take a selfie using the kiosk camera and select from multiple predefined background themes. After capturing the photo, the application processes the image and merges it with the selected background using image compositing techniques.Once the final image is generated, the system creates a QR code that users can scan with their smartphones to download the image instantly. This contactless download method ensures convenience and speed, especially in high-traffic environments like airports.The kiosk is designed for high performance and quick processing, making it suitable for locations with large numbers of visitors. By combining image processing, digital background integration, and QR-based downloads, the system provides an engaging and innovative digital experience for airport passengers.',
+    description: 'The Selfie Kiosk System was developed as an interactive digital solution for visitors at Indira Gandhi International Airport, with GMR Group as the client. The kiosk allows travelers to capture personalized selfies and enhance them with digitally generated backgrounds, creating a memorable airport experience. The system provides a simple interface where visitors can take a selfie using the kiosk camera and select from multiple predefined background themes. After capturing the photo, the application processes the image and merges it with the selected background. Once the final image is generated, the system creates a QR code that users can scan with their smartphones to download the image instantly. This contactless download method ensures convenience and speed in busy airport environments.',
     points: [
       "Installed at Indira Gandhi International Airport.",
       "Allows users to capture selfies through a digital kiosk.",
       "Users can select themed digital backgrounds.",
       "System performs image processing and background compositing.",
       "Generates a QR code for instant image download.",
-      "Designed for high-footfall environments.",
+      "Designed for busy public locations.",
       "Provides contactless and engaging visitor experience."
     ]
   },
@@ -315,7 +315,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Vikas Gupta',
     role: 'HR Director',
     company: 'EliTes India Pvt. Ltd.',
-    quote: 'The AI-powered HRMS platform built by Nebo IT Solutions has completely transformed our workforce management. The predictive attrition models and automated payroll reconciliation have saved us countless hours and significantly improved employee engagement.',
+    quote: 'The HRMS platform built by Nebo IT Solutions has made workforce management much easier for our team. Payroll reconciliation is faster, and the retention reports give us a clearer view of employee engagement.',
     rating: 5,
     projectType: 'Enterprise SaaS'
   },
@@ -333,7 +333,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Dr. Sunita Sharma',
     role: 'VP of Quality Control',
     company: 'Apex Industrial Group',
-    quote: 'Implementing OpticSight on our manufacturing lines has been a total revelation. Its 99.2% defect detection accuracy at 120fps has almost completely eliminated manual inspection errors and drastically reduced our quality-related product recalls.',
+    quote: 'OpticSight gave our quality team a faster way to find defects and review patterns on the line. It reduced manual inspection errors and helped us bring down quality related recalls.',
     rating: 5,
     projectType: 'Computer Vision Inspection'
   },
@@ -342,7 +342,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Vikram Singh',
     role: 'CTO',
     company: 'Enterprise Solutions Firm',
-    quote: 'Working with Nebo IT was a game-changer for our digital transformation. Their expertise in AI and cloud architecture helped us reduce operational costs by 40% while significantly improving our system reliability and performance.',
+    quote: 'Working with Nebo IT gave our digital transformation a clear direction. Their cloud and automation work helped us reduce operating costs while improving reliability and performance.',
     rating: 5,
     projectType: 'Cloud & AI Solutions'
   },
@@ -360,14 +360,14 @@ export const PROCESS_STEPS: ProcessStep[] = [
     id: 'ps1',
     step: 1,
     title: 'Discovery',
-    description: 'We deep-dive into your business challenges, conduct comprehensive root cause analysis, and define the most effective digital strategy.',
+    description: 'We study your business challenge, review the workflow, and define a digital strategy that fits the problem.',
     icon: 'Search'
   },
   {
     id: 'ps2',
     step: 2,
     title: 'Design',
-    description: 'Our team crafts user-centric interfaces with stunning visual aesthetics, wireframes, and interactive prototypes tailored to your brand.',
+    description: 'Our team designs clear interfaces, wireframes, and prototypes tailored to your users and brand.',
     icon: 'Palette'
   },
   {
@@ -380,8 +380,8 @@ export const PROCESS_STEPS: ProcessStep[] = [
   {
     id: 'ps4',
     step: 4,
-    title: 'Deploy & Scale',
-    description: 'We launch your solution with zero-downtime deployments, provide ongoing support, and optimize for performance as your business scales.',
+    title: 'Deploy And Scale',
+    description: 'We launch your solution carefully, provide support, and improve performance as your business grows.',
     icon: 'Rocket'
   },
 ];

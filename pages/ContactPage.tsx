@@ -115,7 +115,7 @@ const ContactPage: React.FC = () => {
                 <div className="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 flex-shrink-0"><Clock size={18} /></div>
                 <div>
                   <h4 className="text-sm font-bold text-white mb-2">Business Hours</h4>
-                  <p className="text-gray-500 text-sm">Mon – Sat: 9:00 AM – 6:00 PM IST</p>
+                  <p className="text-gray-500 text-sm">Monday to Saturday: 9:00 AM to 6:00 PM IST</p>
                 </div>
               </div>
             </div>

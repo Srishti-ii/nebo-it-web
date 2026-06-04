@@ -3,50 +3,50 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, X, Calendar, Terminal } from 'lucide-react';
 
 const MOCK_BLOGS = [
-  { 
-    id: '1', 
-    title: 'Decoupling the Monolith: A Post-Mortem', 
-    author: 'Sarah Chen, Lead Architect', 
-    date: 'Feb 22, 2026', 
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800', 
-    description: 'How we migrated a 5-year-old legacy system to a Go-based event-driven architecture.', 
-    content: 'Scaling a monolithic application eventually hits a ceiling. In this deep dive, we explore our recent migration to an event-driven microservices architecture using Go and Kafka. We discuss the pain points of distributed data transactions, our strategy for zero-downtime database slicing, and how we ultimately reduced API latency by 43% across our core services.' 
+  {
+    id: '1',
+    title: 'Decoupling The Monolith',
+    author: 'Sarah Chen, Lead Architect',
+    date: 'Feb 22, 2026',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800',
+    description: 'How we migrated a legacy system to a Go based event driven architecture.',
+    content: 'Scaling a monolithic application eventually hits a ceiling. In this article, we share how we moved to event driven microservices using Go and Kafka, handled distributed data, and reduced API latency by 43% across core services.'
   },
-  { 
-    id: '2', 
-    title: 'WebAssembly & Rust: The Frontend Frontier', 
-    author: 'Marcus Johnson, Staff Engineer', 
-    date: 'Mar 17, 2026', 
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800', 
-    description: 'Breaking the JavaScript monopoly for high-compute tasks in the browser.', 
-    content: 'JavaScript is fast, but for heavy computational tasks like client-side video processing and real-time 3D rendering, it can bottleneck. By compiling Rust down to WebAssembly (Wasm), we achieved near-native performance directly in the browser. This article walks through our Rust-to-Wasm pipeline and how we integrate it seamlessly with our existing React ecosystem.' 
+  {
+    id: '2',
+    title: 'WebAssembly & Rust: The Frontend Frontier',
+    author: 'Marcus Johnson, Staff Engineer',
+    date: 'Mar 17, 2026',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800',
+    description: 'Using Rust and WebAssembly for compute heavy browser tasks.',
+    content: 'JavaScript is fast, but video processing and 3D rendering can create bottlenecks. By compiling Rust to WebAssembly, we improved performance directly in the browser and integrated it with our React ecosystem.'
   },
-  { 
-    id: '3', 
-    title: 'Zero-Trust Security in CI/CD Pipelines', 
-    author: 'Elena Rodriguez, DevSecOps', 
-    date: 'Apr 30, 2026', 
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800', 
-    description: 'Implementing strict least-privilege access across automated deployment workflows.', 
-    content: 'Supply chain attacks are the new perimeter threat. Securing your code repository is no longer enough; the pipeline itself must be hardened. We break down our implementation of a Zero-Trust model within GitHub Actions, utilizing ephemeral runners, short-lived OIDC tokens for AWS authentication, and automated container image signing.' 
+  {
+    id: '3',
+    title: 'Security In Deployment Pipelines',
+    author: 'Elena Rodriguez, DevSecOps',
+    date: 'Apr 30, 2026',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800',
+    description: 'Improving access control across automated deployment workflows.',
+    content: 'Securing the code repository is only one part of the job. We explain how we improved our GitHub Actions setup with temporary runners, short lived OIDC tokens for AWS authentication, and container image signing.'
   },
-  { 
-    id: '4', 
-    title: 'RAG vs Fine-Tuning for Enterprise LLMs', 
-    author: 'Dr. Alan Turing, Head of AI', 
-    date: 'May 05, 2026', 
-    image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800', 
-    description: 'Evaluating architectural choices for implementing generative AI in B2B SaaS.', 
-    content: 'When adding LLM capabilities to enterprise software, context is everything. Should you fine-tune an open-source model like Llama 3, or build a Retrieval-Augmented Generation (RAG) pipeline? We compare the cost, latency, and hallucination rates of both approaches based on our recent deployment for a Fortune 500 fintech client.' 
+  {
+    id: '4',
+    title: 'RAG vs Fine Tuning For Enterprise LLMs',
+    author: 'Dr. Alan Turing, Head of AI',
+    date: 'May 05, 2026',
+    image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800',
+    description: 'Evaluating architectural choices for implementing generative AI in B2B SaaS.',
+    content: 'When adding LLM capabilities to enterprise software, context is everything. We compare fine tuning an open source model with building a Retrieval Augmented Generation pipeline, based on cost, latency, and response quality.'
   },
-  { 
-    id: '5', 
-    title: 'Mastering React Server Components', 
-    author: 'David Kim, UI/UX Engineer', 
-    date: 'June 12, 2026', 
-    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800', 
-    description: 'Drastically reducing client-side bundle sizes without sacrificing interactivity.', 
-    content: 'React Server Components (RSC) fundamentally shift how we think about rendering. By pushing heavy dependencies to the server and streaming UI components directly to the client, we reduced our initial load times by over 60%. This guide covers our transition strategy and the mental model required to separate server and client boundaries effectively.' 
+  {
+    id: '5',
+    title: 'Mastering React Server Components',
+    author: 'David Kim, UI/UX Engineer',
+    date: 'June 12, 2026',
+    image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800',
+    description: 'Reducing browser bundle size without sacrificing interactivity.',
+    content: 'React Server Components (RSC) fundamentally shift how we think about rendering. By pushing heavy dependencies to the server and streaming UI components directly to the client, we reduced our initial load times by over 60%. This guide covers our transition strategy and the mental model required to separate server and client boundaries effectively.'
   }
 ];
 

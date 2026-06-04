@@ -5,10 +5,8 @@ import { SERVICES } from '../constants';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import * as Icons from 'lucide-react';
 
-/* ─── pick 6 services for the orbit ─── */
 const ORBIT_SERVICES = SERVICES.slice(0, 6);
 
-/* ─── short labels for the orbit icons ─── */
 const SHORT_LABELS = [
   'AI Software',
   'Gen AI & LLM',
@@ -18,21 +16,18 @@ const SHORT_LABELS = [
   'AI Strategy',
 ];
 
-/* ─── angular positions (degrees, 0 = right, goes clockwise) ─── */
 const ORBIT_ANGLES = [270, 330, 30, 90, 150, 210];
 
-/* ─── card placement relative to icon ─── */
 type CardPlacement = { side: 'top' | 'bottom'; align: 'center' | 'left' | 'right' };
 const CARD_PLACEMENTS: CardPlacement[] = [
-  { side: 'top', align: 'center' },   // top icon
-  { side: 'top', align: 'left' },     // top-right
-  { side: 'top', align: 'left' },     // bottom-right-upper
-  { side: 'bottom', align: 'center' },// bottom icon
-  { side: 'bottom', align: 'right' }, // bottom-left
-  { side: 'top', align: 'right' },    // top-left
+  { side: 'top', align: 'center' },
+  { side: 'top', align: 'left' },
+  { side: 'top', align: 'left' },
+  { side: 'bottom', align: 'center' },
+  { side: 'bottom', align: 'right' },
+  { side: 'top', align: 'right' },
 ];
 
-/* ─── Desktop Orbit ─── */
 const DesktopOrbit: React.FC = () => {
   const [hovered, setHovered] = useState<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -61,7 +56,6 @@ const DesktopOrbit: React.FC = () => {
       className="relative hidden md:flex items-center justify-center"
       style={{ width: '100%', height: 750 }}
     >
-      {/* ─── Faint orbit ring (visible circle) ─── */}
       <motion.div
         className="absolute rounded-full pointer-events-none"
         style={{
@@ -79,7 +73,6 @@ const DesktopOrbit: React.FC = () => {
         transition={{ duration: 1.2, delay: 0.1, ease: 'easeOut' }}
       />
 
-      {/* ─── Second faint inner ring ─── */}
       <motion.div
         className="absolute rounded-full pointer-events-none"
         style={{
@@ -96,7 +89,6 @@ const DesktopOrbit: React.FC = () => {
         transition={{ duration: 1, delay: 0.2 }}
       />
 
-      {/* ─── SVG connection lines ─── */}
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none"
         style={{ overflow: 'visible' }}
@@ -146,7 +138,6 @@ const DesktopOrbit: React.FC = () => {
         })}
       </svg>
 
-      {/* ─── Central hub ─── */}
       <motion.div
         className="absolute z-20"
         style={{
@@ -173,7 +164,6 @@ const DesktopOrbit: React.FC = () => {
         <div className="orbit-hub-pulse orbit-hub-pulse--delayed" />
       </motion.div>
 
-      {/* ─── Orbiting service nodes ─── */}
       {ORBIT_SERVICES.map((service, i) => {
         const angle = (ORBIT_ANGLES[i] * Math.PI) / 180;
         const x = Math.cos(angle) * orbitRadius;
@@ -182,7 +172,6 @@ const DesktopOrbit: React.FC = () => {
         const isHovered = hovered === i;
         const placement = CARD_PLACEMENTS[i];
 
-        /* card offset calculation */
         let cardMarginLeft = x - 150;
         let cardMarginTop =
           placement.side === 'top'
@@ -192,8 +181,7 @@ const DesktopOrbit: React.FC = () => {
         if (placement.align === 'right') cardMarginLeft = x - 260;
 
         return (
-          <React.Fragment key={service.id}>
-            {/* icon + label group */}
+          <div key={service.id} className="contents" onMouseEnter={() => setHovered(i)} onMouseLeave={() => setHovered(null)}>
             <motion.div
               className="absolute z-30 flex flex-col items-center"
               style={{
@@ -214,10 +202,7 @@ const DesktopOrbit: React.FC = () => {
                 damping: 16,
                 delay: 0.6 + i * 0.12,
               }}
-              onMouseEnter={() => setHovered(i)}
-              onMouseLeave={() => setHovered(null)}
             >
-              {/* floating animation wrapper */}
               <motion.div
                 className="flex flex-col items-center cursor-pointer"
                 animate={{ y: [0, -5, 0] }}
@@ -228,12 +213,10 @@ const DesktopOrbit: React.FC = () => {
                   delay: i * 0.6,
                 }}
               >
-                {/* the circle icon */}
                 <div
                   className={`orbit-icon-node ${isHovered ? 'orbit-icon-node--active' : ''}`}
                   style={{ width: iconSize, height: iconSize }}
                 >
-                  {/* glow ring on hover */}
                   {isHovered && (
                     <motion.div
                       className="absolute inset-[-4px] rounded-full border-2 border-purple-400/50"
@@ -245,7 +228,6 @@ const DesktopOrbit: React.FC = () => {
                   )}
                   {Icon && <Icon size={28} strokeWidth={1.8} />}
                 </div>
-                {/* label underneath */}
                 <span
                   className={`mt-2.5 text-[11px] font-semibold tracking-wide uppercase text-center leading-tight transition-colors duration-300 whitespace-nowrap ${
                     isHovered ? 'text-purple-300' : 'text-gray-500'
@@ -256,11 +238,10 @@ const DesktopOrbit: React.FC = () => {
               </motion.div>
             </motion.div>
 
-            {/* ─── Hover detail card ─── */}
             <AnimatePresence>
               {isHovered && (
                 <motion.div
-                  className="absolute z-50 pointer-events-none"
+                  className="absolute z-50 pointer-events-auto"
                   style={{
                     left: '50%',
                     top: '50%',
@@ -273,7 +254,6 @@ const DesktopOrbit: React.FC = () => {
                   transition={{ type: 'spring', stiffness: 350, damping: 28 }}
                 >
                   <div className="orbit-detail-card">
-                    {/* connector line */}
                     <div
                       className={`orbit-connector ${
                         placement.side === 'top' ? 'orbit-connector--bottom' : 'orbit-connector--top'
@@ -293,7 +273,7 @@ const DesktopOrbit: React.FC = () => {
                     </p>
                     <Link
                       to="/services"
-                      className="inline-flex items-center gap-1.5 text-purple-400 text-[13px] font-semibold pointer-events-auto hover:text-purple-300 transition-colors"
+                      className="inline-flex items-center gap-1.5 text-purple-400 text-[13px] font-semibold hover:text-purple-300 transition-colors"
                     >
                       Read More <ArrowRight size={13} />
                     </Link>
@@ -301,14 +281,13 @@ const DesktopOrbit: React.FC = () => {
                 </motion.div>
               )}
             </AnimatePresence>
-          </React.Fragment>
+          </div>
         );
       })}
     </div>
   );
 };
 
-/* ─── Mobile Cards ─── */
 const MobileCards: React.FC = () => {
   return (
     <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -345,15 +324,12 @@ const MobileCards: React.FC = () => {
   );
 };
 
-/* ─── Main Component ─── */
 const ServiceOrbit: React.FC = () => {
   return (
     <section className="py-24 md:py-32 relative overflow-hidden" id="services-orbit">
-      {/* background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.08) 0%, rgba(99,102,241,0.04) 40%, transparent 70%)' }} />
 
       <div className="container mx-auto px-6">
-        {/* Section Header */}
         <div className="text-center mb-10 md:mb-2">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -370,9 +346,9 @@ const ServiceOrbit: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="section-title text-center mx-auto"
           >
-            AI-Powered Services
+            Digital Services
             <br />
-            That Redefine What's Possible
+            Built For Real Work
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

@@ -315,7 +315,7 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
               {/* Reduced font size slightly for narrow screens to prevent overlap */}
               <h3 className="text-2xl sm:text-3xl font-bold text-cyan-300 mb-6 uppercase">NEBO ENGINEERING SOLAR ENERGY SOLUTIONS</h3>
               <p className="text-white text-lg leading-relaxed">
-                Welcome to Nebo Engineering Solar Street Lights page, where we illuminate the future with cutting-edge solar lighting solutions designed for urban and rural environments. As a leader in renewable energy technologies, Nebo Engineering combines advanced engineering with sustainable practices to deliver efficient and eco-friendly lighting solutions that enhance safety, visibility, and energy efficiency.
+                Welcome to Nebo Engineering Solar Street Lights page, where we illuminate the future with practical solar lighting solutions designed for urban and rural environments. As a leader in renewable energy technologies, Nebo Engineering combines advanced engineering with sustainable practices to deliver efficient and eco friendly lighting solutions that enhance safety, visibility, and energy efficiency.
               </p>
             </div>
 
@@ -344,7 +344,7 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
                 <div className="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl mb-6">🏮</div>
                 <h4 className="text-2xl font-bold text-[#0f172a] mb-4">Solar Post Lights</h4>
                 <p className="text-slate-600 leading-relaxed">
-                  By utilizing solar energy, Nebo Engineering fancy lights offer significant energy savings and reduce reliance on traditional grid-powered lighting. Our commitment to sustainability extends to promoting eco-friendly practices that contribute to a greener future.
+                  By utilizing solar energy, Nebo Engineering fancy lights offer significant energy savings and reduce reliance on traditional grid lighting. Our commitment to sustainability extends to promoting eco friendly practices that contribute to a greener future.
                 </p>
               </div>
 
@@ -410,7 +410,7 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
               <div className="space-y-6">
                 <div className="bg-cyan-100 p-6 rounded-xl shadow-sm border-l-4 border-cyan-500">
                   <h4 className="text-lg font-bold text-slate-900 mb-2">Innovative Solutions:</h4>
-                  <p className="text-slate-600">We leverage cutting-edge technology and industry best practices to deliver innovative solar solutions tailored to your specific requirements..</p>
+                  <p className="text-slate-600">We use proven technology and industry best practices to deliver solar solutions tailored to your specific requirements.</p>
                 </div>
                 <div className="bg-cyan-100 p-6 rounded-xl shadow-sm border-l-4 border-cyan-500">
                   <h4 className="text-lg font-bold text-slate-900 mb-2">Expertise and Experience:</h4>
@@ -465,7 +465,7 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
                 <div className={`text-slate-400 text-sm overflow-hidden transition-all duration-500 ${expandedBio === 6 ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                   <p className="mb-2">Mr. Khare is a seasoned Chartered Civil Engineering Professional with 45+ years of experience in the planning, design, and execution of infrastructure projects.</p>
                   <p className="mb-2">His core expertise includes roads, water supply, sewerage, wastewater systems, and smart city developments.</p>
-                  <p>He has proven expertise in project management, structural design, and quality compliance with strong leadership in large-scale public infrastructure projects, gained while working in different capacities in Govt. departments.</p>
+                  <p>He has proven expertise in project management, structural design, and quality compliance with strong leadership in large scale public infrastructure projects, gained while working in different capacities in Govt. departments.</p>
                 </div>
                 <p className="text-xs text-cyan-500 font-bold mt-3 uppercase tracking-wider">{expandedBio === 6 ? '- Show Less' : '+ Read Full Bio'}</p>
               </div>
@@ -481,8 +481,8 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
                 <p className="text-slate-400 font-medium mb-3 text-xs">Patron</p>
                 <div className={`text-slate-400 text-sm overflow-hidden transition-all duration-500 ${expandedBio === 7 ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                   <p className="mb-2">Mr. Indu Kant Srivastava is a distinguished Civil Engineering graduate with an illustrious career spanning 39 years of dedicated service at U.P. Jal Nigam.</p>
-                  <p className="mb-2">A veteran in the field of public infrastructure, he has developed an unparalleled mastery over the entire lifecycle of Water Supply Projects, ranging from initial conceptualization and design to ground-level execution and large-scale supervision.</p>
-                  <p>His nearly four decades at the forefront of state-level infrastructure development have equipped him with deep expertise in navigating regulatory frameworks, ensuring quality compliance, and leading multi-disciplinary teams through high-stakes engineering challenges.</p>
+                  <p className="mb-2">A veteran in the field of public infrastructure, he has developed deep experience across the lifecycle of Water Supply Projects, from initial conceptualization and design to field execution and large scale supervision.</p>
+                  <p>His nearly four decades at the forefront of public infrastructure development have equipped him with deep expertise in navigating regulatory frameworks, ensuring quality compliance, and leading multidisciplinary teams through complex engineering challenges.</p>
                 </div>
                 <p className="text-xs text-cyan-500 font-bold mt-3 uppercase tracking-wider">{expandedBio === 7 ? '- Show Less' : '+ Read Full Bio'}</p>
               </div>
@@ -499,7 +499,7 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
                 <div className={`text-slate-400 text-sm overflow-hidden transition-all duration-500 ${expandedBio === 8 ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
                   <p className="mb-2">Mr. Arun Kumar Tyagi is a distinguished professional with a robust background in engineering and management (BE, MBA, FIE).</p>
                   <p className="mb-2">He has a proven track record of leadership in the public sector, having served as the Chief Project Officer for UREDA (Uttarakhand Renewable Energy Development Agency) and as an Advisor to the Planning Department for the Government of Uttarakhand.</p>
-                  <p>With deep expertise in large-scale project implementation and strategic planning, Mr. Tyagi specializes in steering complex initiatives from conception to execution within government frameworks. As a Fellow of the Institution of Engineers (FIE), he brings a high level of technical authority.</p>
+                  <p>With deep expertise in large scale project implementation and strategic planning, Mr. Tyagi specializes in steering complex initiatives from conception to execution within government frameworks. As a Fellow of the Institution of Engineers (FIE), he brings a high level of technical authority.</p>
                 </div>
                 <p className="text-xs text-cyan-500 font-bold mt-3 uppercase tracking-wider">{expandedBio === 8 ? '- Show Less' : '+ Read Full Bio'}</p>
               </div>
@@ -534,7 +534,7 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
                   <p className="mb-2">Directs overall daily business operations and executes the company's strategic vision. Acts as the primary bridge between the board of directors and executive leadership to drive organizational growth, operational excellence, and market expansion.</p>
                   <ul className="list-disc pl-4 space-y-1">
                     <li>15+ years of experience in the trading, manufacturing, and service sectors.</li>
-                    <li>Directs daily business operations and executes long-term organizational strategy.</li>
+                    <li>Directs daily business operations and executes long term organizational strategy.</li>
                     <li>Fosters a strong corporate culture and team development, backed by a PG in Psychology.</li>
                     <li>Oversees financial health, business growth, and administrative excellence.</li>
                   </ul>
@@ -587,12 +587,12 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
                 <h3 className="text-lg font-bold text-white mb-1 uppercase">Anant Srivastava</h3>
                 <p className="text-slate-400 font-medium mb-3 text-xs">Director Marketing</p>
                 <div className={`text-slate-400 text-sm overflow-hidden transition-all duration-500 ${expandedBio === 4 ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
-                  <p className="mb-2">Drives revenue growth by leading business development initiatives and client acquisition strategies. Cultivates key enterprise partnerships, expands market reach, and manages the end-to-end sales pipeline.</p>
+                  <p className="mb-2">Drives revenue growth by leading business development initiatives and client acquisition strategies. Cultivates key enterprise partnerships, expands market reach, and manages the full sales pipeline.</p>
                   <ul className="list-disc pl-4 space-y-1">
                     <li>Driving revenue growth and B2B tech sales.</li>
                     <li>Establishing global client networks.</li>
                     <li>Over 12 years of executive sales leadership.</li>
-                    <li>Conducts in-situ testing, risk analysis, and material assessments.</li>
+                    <li>Conducts in situ testing, risk analysis, and material assessments.</li>
                     <li>Leads structural design deliverables and concept development.</li>
                   </ul>
                 </div>
@@ -611,10 +611,10 @@ const NeboEngineering: React.FC<NeboEngineeringProps> = ({ onSwitchToIT }) => {
                 <h3 className="text-lg font-bold text-white mb-1 uppercase">Pranav Srivastava</h3>
                 <p className="text-slate-400 font-medium mb-3 text-xs">Director IT</p>
                 <div className={`text-slate-400 text-sm overflow-hidden transition-all duration-500 ${expandedBio === 10 ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
-                  <p className="mb-2">Leads technology strategy, engineering practices, and product development with a focus on scalable, high-performance systems.</p>
+                  <p className="mb-2">Leads technology strategy, engineering practices, and product development with a focus on scalable, high performance systems.</p>
                   <ul className="list-disc pl-4 space-y-1">
                     <li>Cloud architecture and scalable system design.</li>
-                    <li>Full-stack development leadership.</li>
+                    <li>Full stack development leadership.</li>
                     <li>5+ years in software engineering.</li>
                     <li>Leads frontend architecture, UI/UX execution, and sprint planning.</li>
                   </ul>

@@ -26,8 +26,7 @@ const ServicesPage: React.FC = () => {
             Services That <span className="gradient-text">Power Growth</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            We provide a comprehensive suite of digital solutions — from custom software development 
-            to AI integration, cloud architecture, and cybersecurity — engineered for enterprise scale.
+            We provide digital solutions across custom software, AI integration, cloud architecture, cybersecurity, and data systems for growing organizations.
           </p>
         </motion.div>
 

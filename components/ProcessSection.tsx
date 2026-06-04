@@ -27,9 +27,9 @@ const ProcessSection: React.FC = () => {
           className="text-center mb-20"
         >
           <span className="section-label justify-center">How We Work</span>
-          <h2 className="section-title text-center mx-auto">Our AI-First Engineering Process</h2>
+          <h2 className="section-title text-center mx-auto">Our Engineering Process</h2>
           <p className="section-subtitle mx-auto text-center mt-4">
-            A rigorous, intelligence-driven methodology that turns your vision into a production-grade AI system — on time, on budget, and built to last.
+            A clear delivery process that turns your idea into a stable product with room to grow.
           </p>
         </motion.div>
 

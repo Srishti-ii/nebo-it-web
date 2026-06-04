@@ -16,7 +16,7 @@ const FAQ_CHIPS = [
   'How can AI transform my business?',
   'What projects have you delivered?',
   'How do I start a project with you?',
-  'What makes Nebo IT AI-first?',
+  'What makes Nebo IT different?',
   'Tell me about CogniFlow',
   'What is FluentAI?',
   'How can I contact Nebo IT?',
@@ -25,9 +25,9 @@ const FAQ_CHIPS = [
 const WELCOME_MESSAGE: Message = {
   id: 'welcome',
   role: 'assistant',
-  content: `Hello! I'm your AI assistant 🤖✨
+  content: `Hello! I'm your Nebo IT assistant.
 
-I can tell you everything about our AI products: **FluentAI**, **CogniFlow**, and **OpticSight**. How can I help you?`,
+I can tell you about our services, projects, and products like **FluentAI**, **CogniFlow**, and **OpticSight**. How can I help you?`,
   timestamp: new Date(),
 };
 

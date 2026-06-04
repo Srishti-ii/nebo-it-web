@@ -21,8 +21,7 @@ const PortfolioPage: React.FC = () => {
             Intelligent Systems <span className="gradient-text">Built to Perform</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            From predictive maintenance AI and multilingual government chatbots to computer vision quality inspectors —
-            every project in our portfolio is a testament to production-grade AI engineering.
+            From predictive maintenance tools and multilingual government assistants to computer vision quality systems, our portfolio shows practical technology built for real operations.
           </p>
         </motion.div>
 

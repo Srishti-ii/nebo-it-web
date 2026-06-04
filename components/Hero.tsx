@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
   };
 
 
-  const headline = ['Powering', 'The Future', 'With', 'Intelligent', 'AI'];
+  const headline = ['Building', 'Digital', 'Systems', 'That', 'Work'];
 
   return (
     <section id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
@@ -70,8 +70,7 @@ const Hero: React.FC = () => {
           transition={{ delay: 1.2, duration: 0.7 }}
           className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light"
         >
-          We architect intelligent systems that learn, reason, and evolve — fusing
-          neural AI with enterprise engineering to build the digital infrastructure of tomorrow.
+          We design and build software, automation, cloud systems, and data tools that help teams run better every day.
         </motion.p>
 
         {/* CTAs */}

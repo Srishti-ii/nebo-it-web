@@ -43,7 +43,7 @@ const CTABanner: React.FC = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-8"
             >
               <Zap size={14} className="text-purple-400" />
-              <span className="text-xs font-semibold tracking-wider uppercase text-purple-300">Ready to go AI-first?</span>
+              <span className="text-xs font-semibold tracking-wider uppercase text-purple-300">Ready to build better?</span>
             </motion.div>
 
             <motion.h2
@@ -54,7 +54,7 @@ const CTABanner: React.FC = () => {
               className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl mx-auto leading-tight"
               style={{ fontFamily: 'var(--font-display)' }}
             >
-              Integrate Intelligence Into <span className="gradient-text">Your Business Today</span>
+              Build The Right <span className="gradient-text">Digital System</span>
             </motion.h2>
 
             <motion.p
@@ -64,7 +64,7 @@ const CTABanner: React.FC = () => {
               transition={{ delay: 0.6, duration: 0.7 }}
               className="text-gray-400 text-lg max-w-xl mx-auto mb-10 leading-relaxed"
             >
-              Let's co-engineer your AI transformation. From LLM integration to autonomous pipelines — Nebo IT turns your ambition into deployed, production-grade intelligence.
+              Bring us the workflow, bottleneck, or idea. Nebo IT will help turn it into a practical system your team can actually use.
             </motion.p>
 
             <motion.div
