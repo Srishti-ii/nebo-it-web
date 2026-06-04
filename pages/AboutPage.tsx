@@ -4,11 +4,11 @@ import { Shield, Lightbulb, Users, Award, Target, Cpu } from 'lucide-react';
 import OrganizationalChart from '../components/OrganizationalChart';
 
 const whyChooseUs = [
-  { icon: Lightbulb, title: 'AI-Native Innovation', description: 'Every solution we build has machine intelligence baked in from day one — LLMs, neural networks, and autonomous workflows are our default, not an afterthought.' },
-  { icon: Shield, title: 'Enterprise-Grade Security', description: 'AI-powered threat detection, end-to-end encryption, and proactive vulnerability management harden your digital perimeter against evolving adversarial attacks.' },
-  { icon: Target, title: 'Outcome-Driven AI', description: 'We don\'t deliver models — we deliver measurable business outcomes. Every AI system is benchmarked against real KPIs: uptime, accuracy, ROI, and cost reduction.' },
-  { icon: Users, title: 'Multidisciplinary AI Team', description: 'ML engineers, data scientists, cloud architects, and UX specialists — all AI-trained and working in lockstep to deliver production-grade intelligent systems.' },
-  { icon: Cpu, title: 'Full-Stack AI Capability', description: 'From on-device edge inference to GPU-accelerated cloud training, from RAG pipelines to real-time computer vision — we operate the entire modern AI stack.' },
+  { icon: Lightbulb, title: 'Practical Innovation', description: 'We design technology around the work it has to support. The goal is simple: useful systems that fit your process and keep improving with your team.' },
+  { icon: Shield, title: 'Enterprise Security', description: 'We build with secure access, encrypted data flows, monitoring, and regular review so your digital systems are prepared for real business risk.' },
+  { icon: Target, title: 'Measured Outcomes', description: 'We focus on results you can track, such as uptime, accuracy, response time, cost reduction, and better service delivery.' },
+  { icon: Users, title: 'Experienced Team', description: 'Our team brings together software engineers, data specialists, cloud architects, and design leads who understand both product delivery and daily operations.' },
+  { icon: Cpu, title: 'Complete Technical Capability', description: 'From mobile apps and web platforms to data pipelines, cloud systems, and intelligent automation, we handle the full build lifecycle.' },
   { icon: Award, title: 'Certified & Trusted', description: 'ISO 9001 & ISO 27001 certified, Startup India recognized. Our processes and models meet the strictest standards for quality, security, and regulatory compliance.' },
 ];
 
@@ -19,28 +19,24 @@ const AboutPage: React.FC = () => {
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="mb-24">
           <span className="section-label">Who We Are</span>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-8" style={{ fontFamily: 'var(--font-display)' }}>
-            Building the AI-Powered <span className="gradient-text">Infrastructure of Tomorrow</span>
+            Building Reliable <span className="gradient-text">Digital Infrastructure</span>
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
             <div className="space-y-6">
               <p className="text-gray-300 text-lg leading-relaxed">
-                NEBO IT Solutions is an <strong className="text-purple-300">AI-first technology company</strong> and the IT Division of
-                <strong className="text-purple-300"> Nebo Engineering India Pvt. Ltd.</strong> We don't just digitize — we
-                intelligentize. Every system we build is powered by machine learning, neural inference, and autonomous reasoning.
+                NEBO IT Solutions is the IT Division of
+                <strong className="text-purple-300"> Nebo Engineering India Pvt. Ltd.</strong> We build practical software, data, and automation systems for teams that need dependable digital operations.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                From LLM-powered government platforms to computer vision quality systems and predictive maintenance AI —
-                we deploy intelligence that delivers measurable outcomes at enterprise scale across India.
+                Our work includes government service platforms, quality inspection systems, predictive maintenance tools, enterprise dashboards, and custom applications used across India.
               </p>
             </div>
             <div className="space-y-6">
               <p className="text-gray-400 leading-relaxed">
-                As part of Nebo Industries — spanning Civil, Electrical, Mechanical, IT, and Renewable Energy — we bring
-                a unique engineering-meets-AI perspective. Our models are trained on real operational data from
-                physical-world infrastructure, not just synthetic benchmarks.
+                As part of Nebo Industries, with experience across Civil, Electrical, Mechanical, IT, and Renewable Energy, we bring an engineering view to every project. We study the real operating environment before we recommend a solution.
               </p>
               <div className="flex flex-wrap gap-3">
-                {['ISO 9001', 'ISO 27001', 'Startup India', 'AI-First', 'Edge ML', 'LLM Integration'].map((b) => (
+                {['ISO 9001', 'ISO 27001', 'Startup India', 'Automation', 'Data Systems', 'Cloud Delivery'].map((b) => (
                   <span key={b} className="px-4 py-2 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-300 border border-purple-500/10">{b}</span>
                 ))}
               </div>
@@ -59,7 +55,7 @@ const AboutPage: React.FC = () => {
             <span className="section-label justify-center">Our Advantages</span>
             <h2 className="section-title text-center mx-auto">Why Choose Nebo IT?</h2>
             <p className="section-subtitle text-center mx-auto mt-4">
-              We're not just technology providers — we're AI engineering partners who co-own your outcomes.
+              We work like a delivery partner, not a vendor passing over a folder of code.
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -82,7 +78,7 @@ const AboutPage: React.FC = () => {
           </div>
         </section>
 
-        <OrganizationalChart />
+        {/* <OrganizationalChart /> */}
       </div>
     </main>
   );

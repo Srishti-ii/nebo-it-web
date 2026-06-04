@@ -23,7 +23,7 @@ class Particle {
 
     if (isSpark) {
       const angle = Math.atan2(cursorVy, cursorVx) + Math.PI + (Math.random() - 0.5) * 1.5;
-      const speed = (Math.sqrt(cursorVx * cursorVx + cursorVy * cursorVy) * 0.15) + Math.random() * 2;
+      const speed = (Math.sqrt(cursorVx * cursorVx + cursorVy * cursorVy) * 0.15) + Math.random() * 10;
       this.vx = Math.cos(angle) * speed;
       this.vy = Math.sin(angle) * speed;
       

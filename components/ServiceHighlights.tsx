@@ -31,7 +31,7 @@ const ServiceHighlights: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="section-title"
             >
-              AI-Powered Services<br />That Redefine What's Possible
+              Digital Services<br />Built For Real Work
             </motion.h2>
           </div>
           <Link

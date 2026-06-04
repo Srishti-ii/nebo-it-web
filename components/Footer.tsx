@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
             </div>
             
             <p className="text-gray-400 text-lg leading-relaxed max-w-md">
-              Orchestrating high-performance digital experiences that blend artistic finesse with surgical engineering precision.
+              Building reliable digital experiences with clear design and solid engineering.
             </p>
 
             <div className="pt-4 max-w-md">
