@@ -1,18 +1,109 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, X, Calendar, User } from 'lucide-react';
-
-const BLOGS = [
-  { id: '1', title: 'Decoupling The Monolith', author: 'Sarah Chen', date: 'Feb 22, 2026', image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800', description: 'How we migrated a legacy system to a Go based event driven architecture.', content: 'Scaling a monolithic application eventually hits a ceiling. We share how we moved to event driven microservices using Go and Kafka, reducing API latency by 43%.' },
-  { id: '2', title: 'WebAssembly & Rust: The Frontend Frontier', author: 'Marcus Johnson', date: 'Mar 17, 2026', image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800', description: 'Using Rust and WebAssembly for compute heavy browser tasks.', content: 'By compiling Rust to WebAssembly, we improved performance for browser video processing and 3D rendering.' },
-  { id: '3', title: 'Security In Deployment Pipelines', author: 'Elena Rodriguez', date: 'Apr 30, 2026', image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800', description: 'Improving access control across deployments.', content: 'Supply chain attacks affect the whole delivery path. We share how temporary runners and OIDC tokens improved our GitHub Actions setup.' },
-  { id: '4', title: 'RAG vs Fine Tuning For Enterprise LLMs', author: 'Dr. Alan Turing', date: 'May 05, 2026', image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800', description: 'Evaluating AI architecture choices for B2B SaaS.', content: 'We compare cost, latency, and response quality for RAG and fine tuning approaches based on an enterprise deployment.' },
-  { id: '5', title: 'Mastering React Server Components', author: 'David Kim', date: 'Jun 12, 2026', image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800', description: 'Reducing bundle sizes without sacrificing interactivity.', content: 'React Server Components change how rendering is planned. We reduced initial load times by 60% by moving heavy dependencies to the server.' },
+const FALLBACK_BLOGS = [
+  {
+    id: "1",
+    title: "Decoupling The Monolith",
+    author: "Sarah Chen",
+    date: "Feb 22, 2026",
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800",
+    description:
+      "How we migrated a legacy system to a Go based event driven architecture.",
+    content:
+      "Scaling a monolithic application eventually hits a ceiling. We share how we moved to event driven microservices using Go and Kafka, reducing API latency by 43%.",
+  },
+  {
+    id: "2",
+    title: "WebAssembly & Rust: The Frontend Frontier",
+    author: "Marcus Johnson",
+    date: "Mar 17, 2026",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800",
+    description:
+      "Using Rust and WebAssembly for compute heavy browser tasks.",
+    content:
+      "By compiling Rust to WebAssembly, we improved performance for browser video processing and 3D rendering.",
+  },
+  {
+    id: "3",
+    title: "Security In Deployment Pipelines",
+    author: "Elena Rodriguez",
+    date: "Apr 30, 2026",
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+    description:
+      "Improving access control across deployments.",
+    content:
+      "Supply chain attacks affect the whole delivery path. We share how temporary runners and OIDC tokens improved our GitHub Actions setup.",
+  },
+  {
+    id: "4",
+    title: "RAG vs Fine Tuning For Enterprise LLMs",
+    author: "Dr. Alan Turing",
+    date: "May 05, 2026",
+    image:
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800",
+    description:
+      "Evaluating AI architecture choices for B2B SaaS.",
+    content:
+      "We compare cost, latency, and response quality for RAG and fine tuning approaches.",
+  },
+  {
+    id: "5",
+    title: "Mastering React Server Components",
+    author: "David Kim",
+    date: "Jun 12, 2026",
+    image:
+      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800",
+    description:
+      "Reducing bundle sizes without sacrificing interactivity.",
+    content:
+      "React Server Components change how rendering is planned. We reduced initial load times by 60%.",
+  },
 ];
-
+interface Blog {
+  id: number;
+  title: string;
+  description: string;
+  imageName: string;
+}
 const BlogPage: React.FC = () => {
-  const [selected, setSelected] = useState<typeof BLOGS[0] | null>(null);
+const [blogs, setBlogs] = useState<any[]>(FALLBACK_BLOGS);
+  const [selected, setSelected] =
+  useState<Blog | null>(null);
+useEffect(() => {
+  fetch("https://temporary-backend-rrqn.onrender.com/api/images")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log("API Response:", data);
 
+      if (!Array.isArray(data) || data.length === 0) {
+        console.log("Using fallback blogs");
+        return;
+      }
+
+      const formattedBlogs = data.map((item: any) => ({
+        id: item.id?.toString(),
+        title: item.title,
+        description: item.description,
+        content: item.description,
+        image:
+          item.imageUrl ||
+          item.image ||
+          "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800",
+        author: "Nebo Team",
+        date: "Recent",
+      }));
+
+      setBlogs(formattedBlogs);
+    })
+    .catch((err) => {
+      console.error("API Error:", err);
+      console.log("Using fallback blogs");
+    });
+}, []);
   return (
     <main className="pt-28 pb-20">
       <div className="container mx-auto px-6">
@@ -25,7 +116,7 @@ const BlogPage: React.FC = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {BLOGS.map((post, i) => (
+          {blogs.map((post, i) => ( 
             <motion.div key={post.id} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }}
               onClick={() => setSelected(post)} className="nebo-card overflow-hidden group cursor-pointer flex flex-col">
               <div className="aspect-[4/3] overflow-hidden relative">
