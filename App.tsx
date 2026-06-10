@@ -21,7 +21,7 @@ import AboutPage from './pages/AboutPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 
-import Dashboard from './pages/admin/Dashboard';
+import Dashboard from './pages/Admin/Dashboard';
 import UploadImage from './pages/Admin/UploadBlogs';
 import Images from './pages/Admin/UploadedBlogs';
 import Login from "./pages/Admin/Login";
