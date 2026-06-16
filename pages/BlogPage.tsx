@@ -74,7 +74,7 @@ const [blogs, setBlogs] = useState<any[]>(FALLBACK_BLOGS);
   const [selected, setSelected] =
   useState<Blog | null>(null);
 useEffect(() => {
-  fetch("https://temporary-backend-rrqn.onrender.com/api/images")
+  fetch("https://simplefiles.onrender.com/api/images")
     .then((res) => res.json())
     .then((data) => {
       console.log("API Response:", data);
