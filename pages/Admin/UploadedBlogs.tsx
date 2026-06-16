@@ -91,11 +91,13 @@ export default function UploadedBlogs() {
                 key={img.id}
                 className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"
               >
-                <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">
-                    Preview Unavailable
-                  </span>
-                </div>
+                <div className="h-48 bg-gray-200 flex items-center justify-center overflow-hidden">
+  <img
+    src={img.imageUrl}
+    alt={img.title}
+    className="w-full h-full object-contain"
+  />
+</div>
 
                 <div className="p-5">
                   <h2 className="font-bold text-gray-700 text-lg mb-2">
