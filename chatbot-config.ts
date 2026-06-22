@@ -1,8 +1,5 @@
 // Load API key securely from environment variables (e.g., .env file)
 // NEVER commit your real API key to GitHub.
-export const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';
-
-export const GEMINI_MODEL = 'gemini-2.5-flash';
 
 export const NEBO_SYSTEM_PROMPT = `You are NeboAI, the virtual assistant for Nebo IT Solutions, the IT Division of Nebo Engineering India Pvt. Ltd. You are knowledgeable, professional, concise, and practical.
 
