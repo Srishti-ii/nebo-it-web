@@ -752,6 +752,66 @@ delay:2
 
 {!isOpen && (
 
+<div className="relative group">
+
+<div
+role="tooltip"
+className="
+pointer-events-none
+absolute
+bottom-full
+right-0
+z-10
+mb-2
+w-64
+max-w-[calc(100vw-3rem)]
+rounded-2xl
+border
+border-purple-500/20
+bg-[#0c0c1d]
+px-4
+py-3
+shadow-xl
+opacity-0
+translate-y-1
+transition-all
+duration-200
+ease-out
+hidden
+[@media(hover:hover)_and_(pointer:fine)]:block
+[@media(hover:hover)_and_(pointer:fine)]:group-hover:opacity-100
+[@media(hover:hover)_and_(pointer:fine)]:group-hover:translate-y-0
+"
+>
+
+<p className="text-sm font-semibold text-gray-200 mb-1">
+Need assistance?
+</p>
+
+<p className="text-xs text-gray-400 leading-relaxed">
+Ask NeboAI about our services, solutions, or book a consultation.
+</p>
+
+<span
+aria-hidden="true"
+className="
+pointer-events-none
+absolute
+-bottom-[5px]
+right-8
+z-0
+h-2.5
+w-2.5
+rotate-45
+bg-[#0c0c1d]
+border-r
+border-b
+border-purple-500/20
+"
+/>
+
+</div>
+
 <motion.div
 
 initial={{
@@ -797,6 +857,8 @@ Ask NeboAI
 
 
 </motion.div>
+
+</div>
 
 )}
 
@@ -886,6 +948,7 @@ className="
 fixed
 bottom-24
 right-6
+left-auto
 z-[998]
 w-[420px]
 max-h-[80vh]
@@ -893,6 +956,11 @@ flex flex-col
 rounded-3xl
 overflow-hidden
 bg-[#12122a]
+max-sm:left-4
+max-sm:right-4
+max-sm:w-auto
+max-sm:max-w-none
+max-sm:max-h-[calc(100dvh-7rem)]
 "
 
 
@@ -987,6 +1055,7 @@ onClick={()=>setIsOpen(false)}
 
 <div className="
 flex-1
+min-h-0
 overflow-y-auto
 px-4
 py-5

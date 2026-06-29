@@ -90,6 +90,12 @@ export const SERVICES: Service[] = [
     description: 'We build mobile apps in React Native and Flutter for field teams, customers, and internal users. When needed, we add offline use, device level processing, secure sync, and fast performance on iOS and Android.',
     icon: 'Smartphone',
   },
+  {
+    id: 'digital-marketing',
+    title: 'Digital Marketing',
+    description: 'We help businesses reach the right audience through SEO, social media, paid advertising, and content marketing. Every campaign is planned around your goals, measured with real data, and refined to generate sustainable growth and stronger customer engagement.',
+    icon: 'Megaphone',
+  },
 ];
 
 export const TEAM: TeamMember[] = [
