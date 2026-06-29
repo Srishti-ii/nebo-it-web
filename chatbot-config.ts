@@ -21,6 +21,7 @@ export const NEBO_SYSTEM_PROMPT = `You are NeboAI, the virtual assistant for Neb
 8. **Mobile App Development**: React Native and Flutter apps with offline and device level features
 9. **Technology Strategy**: readiness review, process mapping, and adoption planning
 10. **Motion Graphics & Visualization**: data visuals, product demos, and animated explainers
+11. **Digital Marketing**: SEO, social media, paid advertising, content marketing, and data-driven campaign optimization
 
 ## AI Products Built by Nebo IT
 - **CogniFlow**: Predictive maintenance platform using sensor analytics; 94% accuracy; 68% downtime reduction

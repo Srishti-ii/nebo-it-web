@@ -191,9 +191,15 @@ const Footer: React.FC = () => {
                 <div className="mt-1 w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors border border-white/5">
                   <MapPin className="w-4 h-4 text-gray-400 group-hover:text-purple-400" />
                 </div>
-                <div className="text-gray-400 text-sm leading-relaxed space-y-2">
-                  <p className="hover:text-white transition-colors cursor-default">R-18 1st Floor, Vikas Marg,<br/>Shakarpur, Delhi-110092</p>
-                  <p className="hover:text-white transition-colors cursor-default">K-422, SITE 5 KASNA IND AREA,<br/>Greater Noida, Gautam Budh Nagar - 201310</p>
+                <div className="text-gray-400 text-sm leading-relaxed space-y-4">
+                  <div>
+                    <p className="font-semibold text-gray-200 mb-1 group-hover:text-white transition-colors cursor-default">Delhi Office</p>
+                    <p className="hover:text-white transition-colors cursor-default">R-18 1st Floor, Vikas Marg,<br/>Shakarpur, Delhi-110092</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-200 mb-1 group-hover:text-white transition-colors cursor-default">Greater Noida Office</p>
+                    <p className="hover:text-white transition-colors cursor-default">K-422, SITE 5 KASNA IND AREA,<br/>Greater Noida, Gautam Budh Nagar - 201310</p>
+                  </div>
                 </div>
               </div>
 
