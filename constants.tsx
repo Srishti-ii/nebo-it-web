@@ -96,6 +96,12 @@ export const SERVICES: Service[] = [
     description: 'We help businesses reach the right audience through SEO, social media, paid advertising, and content marketing. Every campaign is planned around your goals, measured with real data, and refined to generate sustainable growth and stronger customer engagement.',
     icon: 'Megaphone',
   },
+  {
+    id:'sap-btp',
+    title: 'SAP BTP Development',
+    description: 'We build cloud-native solutions on SAP Business Technology Platform, including SAP Fiori applications, CAP services, integrations, workflow automation, and data extensions to accelerate digital transformation while keeping your SAP landscape secure and scalable.',
+    icon: 'CloudCog'
+  }
 ];
 
 export const TEAM: TeamMember[] = [
@@ -262,6 +268,23 @@ export const PROJECTS: Project[] = [
       'Automated Payroll Reconciliation with 99.9% accuracy.',
       'Live employee sentiment analysis through feedback loops.',
       'Intelligent Resource Allocation & Leave Management.'
+    ]
+  },
+  {
+    id: 'sap-btp',
+    title: 'ERP on SAP BTP',
+    category: 'Cloud Solutions',
+    shortDescription: 'ERP is a cloud-based business application built on SAP Business Technology Platform that streamlines core business processes including employee, customer, inventory, and order management through a modern SAP Fiori interface.',
+    description: 'ERP is a modern enterprise resource planning application developed on SAP Business Technology Platform (SAP BTP). Built using SAP Fiori and the Cloud Application Programming Model (CAP), it provides organizations with a centralized platform to manage essential business operations such as employees, customers, products, inventory, and sales orders. The application delivers a responsive user experience, secure role-based access, and scalable cloud architecture, making it suitable for organizations looking to modernize their business processes using SAP technologies.',
+    image: '/img/sap.webp',
+    points: [
+      'Built using SAP Business Technology Platform (SAP BTP).',
+      'Modern SAP Fiori interface for an intuitive user experience.',
+      'Employee, Customer, Product, and Inventory Management.',
+      'Sales Order and Purchase Order management.',
+      'Secure role-based authentication and authorization.',
+      'RESTful services developed using SAP CAP.',
+      'Cloud-ready architecture designed for scalability and future integrations.'
     ]
   },
   {

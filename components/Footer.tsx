@@ -159,7 +159,6 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Navigation */}
           <div className="lg:col-span-2 lg:col-start-7">
             <h4 className="text-sm font-semibold tracking-[0.1em] text-white mb-6 uppercase">Explore</h4>
             <ul className="space-y-4">
@@ -182,7 +181,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Contact Details */}
           <div className="lg:col-span-4">
             <h4 className="text-sm font-semibold tracking-[0.1em] text-white mb-6 uppercase">Connect</h4>
             
